@@ -1,0 +1,85 @@
+insert into loginBBM values('mehanoor123','12345','D');
+insert into loginBBM values('anusha34','12345','D');
+insert into loginBBM values('rasheed34',12345','D');
+insert into loginBBM values('naseema45','12345','D');
+insert into loginBBM values('maram67','12345','D');
+insert into loginBBM values('hafeez97','12345','M');
+insert into loginBBM values('nawaf88','12345','M');
+
+
+insert into donorBBM values('mehanoor123','mehanoor','F',21,'manglore karnataka','7204874414');
+insert into donorBBM values('anusha34','anusha','F',21,'manglore karnataka','8762127340');
+insert into donorBBM values('rasheed34','rasheed','M',21,'manglore karnataka','9449216577');
+insert into donorBBM values('naseema45','naseema','F',21,'manipal karnataka','7411074383');
+insert into donorBBM values('maram67','maram','F',21,'manipal karnataka','7204828720');
+
+
+
+insert into bloodBBM values('ABP','AB+',5000);
+insert into bloodBBM values('AP','A+',7000);
+insert into bloodBBM values('OP','O+',3000);
+insert into bloodBBM values('ON','O-',8000);
+insert into bloodBBM values('BP','B+',5000);
+
+insert into donatesBBM values(1,'mehanoor123','ABP','2013-12-12');
+insert into donatesBBM values(2,'anusha34','AP','2010-3-12');
+insert into donatesBBM values(3,'rasheed34','OP','2011-4-25');
+insert into donatesBBM values(4,'naseema45','ON','2012-6-09');
+insert into donatesBBM values(5,'maram67','BP','2013-11-29');
+
+insert into bloodbankmanagerBBM values('hafeez97','hafeez','manglore karnataka','9446534270');
+insert into bloodbankmanagerBBM values('nawaf88','nawaf','batkal karnataka','8123678546');
+
+insert into bloodbankBBM values(123,'raktadaana kendra');
+
+insert into hospitalBBM values('kmc','9481148244','manglore karnataka');
+insert into hospitalBBM values('abs','9448214615','manglore karnataka');
+insert into hospitalBBM values('ch','9449626158','manglore karnataka');
+insert into hospitalBBM values('ajh','9449556453','manglore karnataka');
+insert into hospitalBBM values('ksh','9483457654','manglore karnataka');
+
+insert into registersBBM values(25,'mehanoor123',123);
+insert into registersBBM values(26,'anusha34',123);
+insert into registersBBM values(27,'rasheed34',123);
+insert into registersBBM values(28,'naseema45',123);
+insert into registersBBM values(29,'maram67',123);
+
+insert into storesBBM values(123,'ABP',5);
+insert into storesBBM values(123,'AP',3);
+insert into storesBBM values(123,'OP',5);
+insert into storesBBM values(123,'ON',4);
+insert into storesBBM values(123,'BP',6);
+
+insert into worksforBBM values('hafeez97',123);
+insert into worksforBBM values('nawaf88',123);
+
+insert into ordersBBM values(50,'9481148244',123,'AB',1,'2013-09-13','10:12:59');
+insert into ordersBBM values(60,'9448214615',123,'ABP',2,'2014-1-07','08:02:39');
+insert into ordersBBM values(70,'9449626158',123,'BP',2,'2013-12-31','23:12:19');
+insert into ordersBBM values(80,'9449556453',123,'ON',3,'2013-02-10','18:15:14');
+insert into ordersBBM values(90,'9483457654',123,'OP',4,'2013-12-11','02:32:20');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

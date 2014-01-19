@@ -1,0 +1,28 @@
+create database bloodbank;
+use bloodbank
+
+1. create table loginBBM(Username varchar(20),Password varchar(20),Usertype varchar(20),PRIMARY KEY(Username));
+
+2. create table donorBBM(Donor_id varchar(20) references loginBBM(Username) ON DELETE CASCADE,Name varchar(20),Sex varchar(1)  NOT NULL,Age int NOT NULL,Address varchar(20),Phone_num varchar(10) UNIQUE NOT NULL,PRIMARY KEY(Donor_id));
+
+
+
+3.create table bloodBBM(Code varchar(3),Bloodgroup varchar(20),Cost int,PRIMARY KEY(Code));
+
+4. create table donatesBBM(Did int, Donor_id varchar(20) references donorBBM(Donor_id) not null, Code varchar(3) references bloodBBM(Code) not null, Donating_date date, PRIMARY KEY(Did));
+
+
+5. create table bloodbankmanagerBBM(Emp_id varchar(20) references loginBBM(Username) ON DELETE CASCADE,Emp_name varchar(20) not null,Address varchar(20),Phone_no varchar(10) unique, primary key(Emp_id));
+
+6. create table bloodbankBBM(Bno int,Bname varchar(20),primary key(Bno));
+
+7.create table hospitalBBM(Name varchar(20),Phone_no varchar(10),Address varchar(30), primary key(phone_no));
+
+8. create table registersBBM(Rid int, Donor_id varchar(20) references donorBBM(Donor_id), Bno int references bloodbankBBM(Bno), primary key(Rid));
+
+9. create table storesBBM(Bno int references bloodbankBBM(Bno),Code varchar(3) references bloodBBM(Code),Quantity int,primary key(Bno,Code));
+
+10. create table worksforBBM(Emp_id varchar(20) references bloodbankmanagerBBM(Emp_id) ON DELETE SET NULL,Bno int references bloodbankBBM(Bno) ON DELETE CASCADE, primary key(Emp_id,Bno));
+
+11. create table ordersBBM(Oid int,Phone_no varchar(10) references hospitalBBM(Phone_no),Bno int references bloodbankBBM(Bno),Bloodtype varchar(20),Quantity int,ordering_date Date,time varchar(20),primary key(Oid));
+
